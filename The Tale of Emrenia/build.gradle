@@ -10,7 +10,7 @@ repositories {
 }
 jar {
     manifest {
-        attributes 'Main-Class': 'mainGame.Main'
+        attributes 'Main-Class': 'maingame.Main'
     }
 }
 
