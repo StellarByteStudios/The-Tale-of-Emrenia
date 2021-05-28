@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Konsolen_RPG.Alpha">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Konsolen_RPG.Alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
