@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class GameEngine {
     public static void startGame(){
-        Scanner scaner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Es läuft wohooo");
         System.out.println("Fangen wir mit den Grundlagen an \n");
         Player player = new Player();
         System.out.println("Gib erstmal deinen Namen an: ");
-        player.setName(scaner.nextLine());
+        player.setName(scanner.nextLine());
+        //--> Eventuell nochmal Bestätigung erfragen, ob der Name richtig ist
         System.out.println("So, nun kümmern wir uns um die Rasse\n");
         chooseRace(player);
         System.out.println("Zum Schluss jetzt noch die Klasse\n");
@@ -48,6 +49,7 @@ public class GameEngine {
                 chooseRace(player);
                 return;
         }
+        //--> Hier nochmal nachfragen, ob man sich sicher mit der Rasse ist. Andernfalls selbe Methode nochmal ausführen
     }
     //Rassenwahl
     public static void chooseClass(Player player){
@@ -81,6 +83,7 @@ public class GameEngine {
                 chooseClass(player);
                 return;
         }
+        //--> Hier nochmal nachfragen, ob man sich sicher mit der Klasse ist. Andernfalls selbe Methode nochmal ausführen
     }
     //Klassenwahl
     private static void wrongInput(){
