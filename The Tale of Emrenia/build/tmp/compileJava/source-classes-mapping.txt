@@ -2,7 +2,9 @@ maingame/oldstuff/Spieler.java
  maingame.oldstuff.Spieler
 maingame/oldstuff/Spielstart.java
  maingame.oldstuff.Spielstart
-maingame/newstuff/Player.java
- maingame.newstuff.Player
 maingame/Main.java
  maingame.Main
+maingame/newstuff/Player.java
+ maingame.newstuff.Player
+maingame/newstuff/GameEngine.java
+ maingame.newstuff.GameEngine
