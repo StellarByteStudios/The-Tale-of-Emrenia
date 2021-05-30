@@ -1,8 +1,8 @@
 maingame/oldstuff/Spieler.java
  maingame.oldstuff.Spieler
-maingame/Main.java
- maingame.Main
-maingame/newstuff/Player.java
- maingame.newstuff.Player
 maingame/oldstuff/Spielstart.java
  maingame.oldstuff.Spielstart
+maingame/newstuff/Player.java
+ maingame.newstuff.Player
+maingame/Main.java
+ maingame.Main
