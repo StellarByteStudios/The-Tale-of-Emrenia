@@ -10,6 +10,8 @@ public class GameEngine {
         Player player = new Player();
         System.out.println("Gib erstmal deinen Namen an: ");
         player.setName(scaner.nextLine());
+        System.out.println(player.name + "also ?"); // Emre - 31.05.2021/10:18 (Kannst es ruhig abändern wenns so nicht gut ist <3)
+        player.changeName(name);                    // Emre - 31.05.2021/10:18 (Kannst es ruhig abändern wenns so nicht gut ist <3)
         System.out.println("So, nun kümmern wir uns um die Rasse");
         chooseRace(player);
         System.out.println("Zum Schluss jetzt noch die Klasse");

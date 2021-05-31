@@ -117,7 +117,7 @@ public class Player {
 
     public void changeName(String name){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Du möchtest deinen Namen ändern");
+        System.out.println("Möchtest du deinen Namen ändern ?");
         System.out.println("(1) Ja !\n(2) Nein !");
         String in = scanner.next();
         int selection;
