@@ -9,16 +9,16 @@ public class GameEngine {
         System.out.println("Fangen wir mit den Grundlagen an \n");
         Player player = new Player();
         System.out.println("Gib erstmal deinen Namen an: ");
-<<<<<<< HEAD
-        player.setName(scaner.nextLine());
+
+        player.setName(scanner.nextLine());
         System.out.println(player.name + "also ?"); // Emre - 31.05.2021/10:18 (Kannst es ruhig abändern wenns so nicht gut ist <3)
-        player.changeName(name);                    // Emre - 31.05.2021/10:18 (Kannst es ruhig abändern wenns so nicht gut ist <3)
+        //player.changeName(name);                    // Emre - 31.05.2021/10:18 (Kannst es ruhig abändern wenns so nicht gut ist <3)
         System.out.println("So, nun kümmern wir uns um die Rasse");
-=======
+
         player.setName(scanner.nextLine());
         //--> Eventuell nochmal Bestätigung erfragen, ob der Name richtig ist
         System.out.println("So, nun kümmern wir uns um die Rasse\n");
->>>>>>> b6973e6a742bc34f5547345e3205c65713162e8a
+
         chooseRace(player);
         System.out.println("Zum Schluss jetzt noch die Klasse\n");
         chooseClass(player);
