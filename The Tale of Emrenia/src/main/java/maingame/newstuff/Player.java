@@ -1,6 +1,5 @@
 package maingame.newstuff;
 
-
 import java.util.Scanner;
 
 public class Player {
@@ -47,73 +46,6 @@ public class Player {
 
         return info;
     }
-
-    //* - - - Erstellung des Players - - - */
-    //Rassenwahl
-    public void chooseRace(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Also welcher der 3 Rassen möchtest du angehören ?");
-        System.out.println("(1) Menschen \n(2) Elfen \n(3) Dämonen");
-        String in = scanner.next();
-        int selection;
-        try {
-            selection = Integer.parseInt(in);
-        } catch (NumberFormatException e){
-            wrongInput();
-            chooseRace();
-            return;
-        }
-        switch (selection){
-            case(1):
-                setRace(1);
-                break;
-            case(2):
-                setRace(2);
-                break;
-            case(3):
-                setRace(3);
-                break;
-            default:
-                wrongInput();
-                chooseRace();
-                return;
-        }
-    }
-    //Klassenwahl
-    public void chooseClass(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Also welcher der 4 Klassen möchtest du angehören ?");
-        System.out.println("(1) Krieger \n(2) Magier \n(3) Dieb \n(4) Schütze");
-        String in = scanner.next();
-        int selection;
-        try {
-            selection = Integer.parseInt(in);
-        } catch (NumberFormatException e){
-            wrongInput();
-            chooseClass();
-            return;
-        }
-        switch (selection){
-            case(1):
-                setClass(1);
-                break;
-            case(2):
-                setClass(2);
-                break;
-            case(3):
-                setClass(3);
-                break;
-            case(4):
-                setClass(4);
-                break;
-            default:
-                wrongInput();
-                chooseClass();
-                return;
-        }
-    }
-
-
 
     public void changeName(String name){
         Scanner scanner = new Scanner(System.in);
