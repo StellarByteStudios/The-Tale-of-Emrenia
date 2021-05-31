@@ -47,33 +47,7 @@ public class Player {
         return info;
     }
 
-    public void changeName(String name){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Möchtest du deinen Namen ändern ?");
-        System.out.println("(1) Ja !\n(2) Nein !");
-        String in = scanner.next();
-        int selection;
-        try {
-            selection = Integer.parseInt(in);
-        } catch (NumberFormatException e){
-            wrongInput();
-            return;
-        }
-        switch (selection){
-            case(2):
-                System.out.println("Gut, dann halt nicht!");
-                break;
-            default:
-                wrongInput();
-                break;
-            case(1):
-                System.out.println("Wie willst du, wie man dich künftig nennt?");
-                setName(scanner.next());
-                break;
-        }
-    }
-
-    //* - - - Veränderung der Werte des Players - - - */
+    /* - - - Veränderung der Werte des Players - - - */
     public void setName(String name){
         this.name = name;
         System.out.println("Dein neuer Name ist nun " + name + "\n");
@@ -84,21 +58,30 @@ public class Player {
         switch (selection) {
             case 1:
                 System.out.println("Du bist nun also menschlicher Abstammung\n");
-                this.playerRace = "Mensch";
-                this.intelligence += 3;
-                this.charisma += 2;
+                playerRace = "Mensch";
+                lifePoints = 3;
+                strength = 3;
+                intelligence = 6;
+                speed = 3;
+                charisma = 5;
                 break;
             case 2:
                 System.out.println("Du bist nun also elfischer Abstammung\n");
-                this.playerRace = "Elf";
-                this.intelligence += 2;
-                this.speed += 3;
+                playerRace = "Elf";
+                lifePoints = 3;
+                strength = 3;
+                intelligence = 5;
+                speed = 6;
+                charisma = 3;
                 break;
             case 3:
                 System.out.println("Du bist nun also daemonischer Abstammung\n");
-                this.playerRace = "Daemon";
-                this.lifePoints += 2;
-                this.strength += 3;
+                playerRace = "Daemon";
+                lifePoints = 5;
+                strength = 6;
+                intelligence = 3;
+                speed = 3;
+                charisma = 3;
                 break;
             default:
                 System.out.println("Irgendwas stimmt hier nicht...");
