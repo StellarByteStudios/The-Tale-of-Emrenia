@@ -117,4 +117,10 @@ public class Player {
         System.out.println("Pass mal besser auf ey");
         return;
     }
+
+    //Rückgabe des Spielernamen (Emre-09.06.2021)
+    public String gibName()
+    {
+        return this.name;
+    }
 }
